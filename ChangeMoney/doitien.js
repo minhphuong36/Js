@@ -1,5 +1,5 @@
 function ChangeMoney(){
-    let Amount =document.getElementById("Amount").value;
+    let Amount = document.getElementById("Amount").value;
     let FromC = document.getElementById("From").value;
     let To = document.getElementById("To").value;
     let Result;
