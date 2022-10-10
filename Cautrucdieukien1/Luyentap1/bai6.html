@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MucHoaHong</title>
+</head>
+<body>
+<script>
+  let a = +prompt('Doanh so ban hang (VND):');
+  if(a >= 1000000000){
+    alert('10% doanh so: ' + a*0.1 + ' VND');
+  }else if(a >= 500000000){
+    alert('5% doanh so: ' + a*0.05 + ' VND');
+  }else if(a >= 200000000){
+    alert('2% doanh so: ' + a*0.02 + ' VND')
+  }else {
+    alert('Khong co hoa hong!');
+  }
+</script>
+</body>
+</html>
