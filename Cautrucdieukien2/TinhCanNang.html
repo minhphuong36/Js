@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TinhCanNang</title>
+</head>
+<body>
+<h1>Tinh Chi So Can Nang</h1>
+<p>Nhap can nang:(Kg) <input type="text" id="a"></p><br>
+<p>Nhap chieu cao :(m) <input type="text" id="b"></P><br>
+<button onclick="Run()">Kiem tra</button><br>
+<p id="Result">Ket qua:</p>
+
+<script>
+    function Run() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let c = a / (b * b);
+        if (c < 18.5) {
+            document.getElementById("Result").innerHTML='Underweight';
+        } else if (c < 25) {
+            document.getElementById("Result").innerHTML='Normal';
+        } else if (c < 30) {
+            document.getElementById("Result").innerHTML='Overweight';
+        } else {
+            document.getElementById("Result").innerHTML= 'Obese';
+        }
+    }
+
+
+</script>
+</body>
+</html>
