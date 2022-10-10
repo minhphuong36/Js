@@ -3,43 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>May Tinh Don Gian</title>
+    <style>
+        button{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 <table>
     <tr>
-        <td colspan="4"><input id="ip"></td>
+        <td colspan="4"><input id="view"></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td><button id="1" onclick="1()">1</button></td>
-        <td><button id="2" onclick="2()">2</button></td>
-        <td><button íd="3" onclick="3()">3</button></td>
-        <td><button id="+" onclick="+()">+</button></td>
+        <td><button value="1" onclick="inputValue(this.value)">1</button></td>
+        <td><button value="2" onclick="inputValue(this.value)">2</button></td>
+        <td><button value="3" onclick="inputValue(this.value)">3</button></td>
+        <td><button  value="+" onclick="inputValue(this.value)">+</button></td>
     </tr>
     <tr>
-        <td><button id="4">4</button></td>
-        <td><button id="5">5</button></td>
-        <td><button id="6">6</button></td>
-        <td><button id="-">-</button></td>
+        <td><button value="4" onclick="inputValue(this.value)">4</button></td>
+        <td><button value="5" onclick="inputValue(this.value)">5</button></td>
+        <td><button value="6" onclick="inputValue(this.value)">6</button></td>
+        <td><button value="-" onclick="inputValue(this.value)">-</button></td>
     </tr>
     <tr>
-        <td><button id="7">7</button></td>
-        <td><button id="8">8</button></td>
-        <td><button id="9">9</button></td>
-        <td><button id="10">x</button></td>
+        <td><button value="7" onclick="inputValue(this.value)">7</button></td>
+        <td><button value="8" onclick="inputValue(this.value)">8</button></td>
+        <td><button value="9" onclick="inputValue(this.value)">9</button></td>
+        <td><button value="*" onclick="inputValue(this.value)">*</button></td>
     </tr>
     <tr>
-        <td><button id="ac">AC</button></td>
-        <td><button id="0">0</button></td>
-        <td><button id="=">=</button></td>
-        <td><button id="/">/</button></td>
+        <td><button onclick="xoa();">AC</button></td>
+        <td><button value="0" onclick="inputValue(this.value)">0</button></td>
+        <td><button onclick="result();">=</button></td>
+        <td><button value="/" onclick="inputValue(this.value)">/</button></td>
     </tr>
 </table>
 <script>
-    function 1(){
+    let view = document.getElementById("view");
+    function inputValue(value){
+        view.value += value;
+    }
+    function result(){
+        let result = eval(view.value);
+        view.value = result;
 
+    }
+    function xoa(){
+        view.value = "";
     }
 
 </script>
