@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GFC</title>
+</head>
+<body>
+<input id="good" type="checkbox" onclick="clickCheckbox('good')"> Good <br>
+<input id="fast" type="checkbox" onclick="clickCheckbox('fast')"> Fast <br>
+<input id="cheap" type="checkbox" onclick="clickCheckbox('cheap')"> Cheap <br>
+<script>
+    function clickCheckbox(tenNut) {
+        let goodInput = document.getElementById("good");
+        let fastInput = document.getElementById("fast");
+        let cheapInput = document.getElementById("cheap");
+        if (goodInput.checked === true && fastInput.checked === true && cheapInput.checked === true ){
+            goodInput.checked = false;
+        }
+
+
+    }
+</script>
+</body>
+</html>
