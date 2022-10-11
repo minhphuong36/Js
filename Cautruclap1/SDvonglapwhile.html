@@ -5,25 +5,26 @@
     <title>while_DoWhile</title>
 </head>
 <body>
-<!--<script>-->
-<!--    var total = 0;-->
-<!--    while(num != -1){-->
-<!--       var num = +prompt('Nhap so bat ky');-->
-<!--        total = total + num;-->
-<!--        alert(total);-->
-<!--    }-->
-<!--    alert(total +1);-->
-<!--</script>-->
-
 <script>
+    let num = +prompt('Nhap so bat ky');
+    let total = 0;
+    while(num != -1){
+        total = total + num;
+        num = +prompt('Nhap so bat ky');
 
-    let i = 1;
-    while (i <= 100){
-        document.write("<hr width =" + i + "%>");
-        i++;
     }
-
+    alert(total);
 </script>
+
+<!--<script>-->
+
+<!--    let i = 1;-->
+<!--    while (i <= 100){-->
+<!--        document.write("<hr width =" + i + "%>");-->
+<!--        i++;-->
+<!--    }-->
+
+<!--</script>-->
 
 
 
