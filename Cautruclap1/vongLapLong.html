@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoopLongNhau</title>
+</head>
+<body>
+<script>
+  let abc;
+  abc ="<table border=\"1\" width=\"300\" cellSpacing=\"0\" cellPadding=\"3\">";
+  i = j = 1;
+  while (i<=10){
+    abc = abc +"<tr>";
+    while (j<=10){
+      abc = abc + "<td>" + i*j + "<td>";
+      j++;
+    }
+    abc = abc +"</tr>";
+    j =1;
+    i++;
+  }
+  abc = abc + "</table>";
+  document.write(abc);
+</script>
+</body>
+</html>
