@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tong20sodau</title>
+</head>
+<body>
+<script>
+  let a = +prompt('nhap so cac chu so Fibonacci dau tien');
+  // let count ;
+  let number1 = 0;
+  let number2 = 1;
+  let number;
+  let tong = 0;
+  for(let i = 0; i < a; i++){
+    document.write(number1 + "<br>");
+    tong += number1;
+    number = number1 + number2;
+    number1 = number2;
+    number2 = number;
+
+  }
+  document.write(tong);
+
+
+
+</script>
+</body>
+</html>
