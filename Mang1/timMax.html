@@ -6,20 +6,23 @@
 </head>
 <body>
 <script>
-  let a = [24, 40,40,35,26, 1,4,6,2,12];
-  let max1 = a[0];
-  let max2 = a[0];
-
+  let a = [40, 40,21,35,26, 1,4,6,2,12];
+  let min = a[0];
+  for( let i = 0;i < a.length; i++){
+      if(a[i] <= min){
+          min = a[i];
+      }
+  }
+  let max1 = min;
   for(let i = 0;i < a.length; i++){
-
-    if( a[i] > max1){
+      if( a[i] > max1){
       max1 = a[i];
     }
 
   }
+  let max2 = min;
   for(let i = 0;i < a.length; i++){
-
-    if( a[i] > max2 && a[i] != max1){
+      if( a[i] > max2 && a[i] != max1){
       max2 = a[i];
     }
 
