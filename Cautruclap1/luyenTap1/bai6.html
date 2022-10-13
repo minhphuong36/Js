@@ -6,18 +6,19 @@
 </head>
 <body>
 <script>
-     let a = +prompt('nhap so cac chu so Fibonacci dau tien');
+     let a = +prompt('nhap so cac chu so tu nhien dau tien');
     let tong = 0;
     let number = 7;
     for(let i = 1; i <= a ; i++ ){
         if(number % 7 == 0){
             document.write(number + "<br>");
-            number += 7;
             tong = tong + number;
+            number += 7;
+
         }
 
     }
-    document.write(tong);
+    document.write("tong = "+ tong);
 
 
 

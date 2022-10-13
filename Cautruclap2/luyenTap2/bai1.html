@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+  let a = +prompt('nhap so cac chu so Fibonacci dau tien');
+  // let count ;
+  let number1 = 0;
+  let number2 = 1;
+  let number;
+  for(let i = 0; i < a; i++){
+    document.write(number1 + "<br>");
+    number = number1 + number2;
+    number1 = number2;
+    number2 = number;
+  }
+
+</script>
+</body>
+</html>
