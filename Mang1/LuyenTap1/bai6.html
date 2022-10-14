@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [12,5,90,67,65,8,45,2,77,10];
+    let b = +prompt('Nhập số nguyên bất kỳ:');
+    let x= false;
+
+    for(let i = 0; i < a.length; i++){
+
+        if(a[i] == b){
+            x =true;
+        }if(a[i] != b){
+            x = false;
+
+        }
+    }
+    if(x){
+        alert("có trong mang");
+    }else {
+        alert("không có trong mảng");
+    }
+
+</script>
+</body>
+</html>

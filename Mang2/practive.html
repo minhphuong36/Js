@@ -25,29 +25,29 @@
   // document.write("So cac so le = " + index2);
 
 
+
+  for(let i = 0; i < a.length ; i++){
+    let dem = true;
+    for (let j = 2;j <= a[i]-1;j++){
+      if( a[i] % j == 0 ){
+        dem = false;
+    }
+    }if(dem == true){
+      document.write(a[i] +"<br>");
+    }
+  }
+
+  // let index = +prompt("nhap index");
   //
-  // for(let i = 0; i < a.length ; i++){
-  //   let dem = true;
-  //   for (let j = 2;j <= a[i]-1;j++){
-  //     if( a[i] % j == 0 ){
-  //       dem = false;
-  //   }
-  //   }if(dem == true){
-  //     document.write(a[i] +"<br>");
-  //   }
-  // }
-
-  let index = +prompt("nhap index");
-
-  let b = [];
-  for(let i =0; i < a.length; i++){
-      if(i != index){
-          b.push(a[i]);
-
-      }
-
-  } a =b;
-  document.write(a);
+  // let b = [];
+  // for(let i =0; i < a.length; i++){
+  //     if(i != index){
+  //         b.push(a[i]);
+  //
+  //     }
+  //
+  // } a =b;
+  // document.write(a);
 
 
 
