@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số a:");
+    let b = +prompt("Nhập số b:");
+    let c = +prompt("Nhập số c:");
+    let d = [a,b,c];
+    let min = d[0];
+    function timMin(d){
+        for ( let i = 0; i < d.length; i++){
+            if(min > d[i]){
+                min = d[i];
+            }
+
+
+        }return min;
+    }
+    document.write(timMin(d));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [1,22,54,4,22,8,9,55,34];
+  let first = 0;
+  let last = a.length -1;
+  function daoChieu(a){
+    while(first < last){
+        let b = a[first];
+        a[first]=a[last];
+        a[last]=b;
+        first++;
+        last--;
+
+
+
+    }return a;
+  }
+  document.write(daoChieu(a));
+</script>
+</body>
+</html>
