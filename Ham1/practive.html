@@ -5,14 +5,74 @@
     <title>Title</title>
 </head>
 <body>
+<!--Bài 1: Viết hàm kiểm tra một ký tự nhập vào có phải là số không?-->
+<!--Bài 2: Viết hàm truyền vào 3 số, trả về số ở giữa.-->
+<!--      VD: 1 3 4 thì là số 2-->
+<!--          1 1 3  thì ko có số ở giữa-->
+<!--Bài 3: Viết hàm truyển vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra ký tự bất kỳ đó-->
+<!--có trong mảng hay không?-->
+<!--VD: arr = ["mot","hai","ba"]-->
+<!--b = "mot" là true-->
+<!--b = "mo"  là false-->
+
+
 <script>
-  function orderFruit() {
-    let total = 0;
-    // Call another function to place order
-    return total;
-  }
-  let result = orderFruit;
-  alert("The total is " + result);
+// Bài 1:
+//
+ let a = prompt("nhap ky tu");
+
+ function kiemTra(a){
+     if(a%1== 0){
+         return true;
+     }
+     return false;
+
+ }alert(kiemTra(a));
+
+
+ // Bài 2:
+// let a = +prompt("nhap a");
+// let b = +prompt("nhap b");
+// let c = +prompt("nhap c");
+//
+//     function traSoGiua(a,b,c){
+//         if (a < b && b < c && a < c){
+//             return b;
+//         }else if (c < b && b < a && c < a){
+//             return b;
+//         }else if (a < b && a < c && c < b){
+//             return c;
+//         }else if( a < b  && c < b && c <a){
+//             return a;
+//         }else if( a > b && a > c && c > b){
+//             return c;
+//         }else if( a > b && a < c && b < c){
+//             return a;
+//         }else {
+//
+//             return "khong ton tai ";
+//         }
+//     }
+//     document.write( traSoGiua(a,b,c)+ "  so o giua");
+
+
+// cách 2: biến a,b,c thành chuỗi. tìm max, min của chuỗi. số tìm đc khác max và min.
+
+    // Bai 3:
+// let arr = ["hung","tuong","phuong","linh","ngat"];
+// let a = "phuong";
+// function kiemTra(arr){
+//     for(let i =0; i < arr.length;i++){
+//
+//         if(arr[i] === a){
+//             return true;
+//             break;
+//         }
+//     }
+//     return false;
+// } alert(kiemTra(arr));
+
+
 </script>
 </body>
 </html>
