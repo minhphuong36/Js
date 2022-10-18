@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Name <input id="inputName">
+<button id="add" onclick="add()">ADD</button>
+<h2>Danh sách tên:</h2>
+<div id="show"></div>
+<script>
+  let names = ["Phương","Tường","Hùng","Linh","Ngát"];
+  let divShow = document.getElementById("show");
+
+
+  function show(){
+    let index ="";
+    for(let i =0; i < names.length; i++){
+       index += names[i] + "<button onClick=\"delete()\">Delete</button>" + "<br>"
+
+
+    }
+    divShow.innerHTML = index;
+  }
+  show();
+
+  function add(){
+      let addName = document.getElementById("inputName").value;
+      names.push(addName);
+      show();
+  }
+  //  function delete(x){
+  //     names.splice(x,1);
+  //     show();
+  //
+  // }
+</script>
+
+</body>
+</html>

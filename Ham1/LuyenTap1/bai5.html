@@ -6,27 +6,25 @@
 </head>
 <body>
 <script>
-    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus","abc"];
     let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
 
     function check_star(star) {
         let index;
-        let result = "";
         for (let i = 0; i < star1.length; i++) {
             if (star == star1[i]) {
                 index = i;
                 for(let j = 0; j < star2.length; j++) {
                     if (index == j) {
-                        result = star2[j];
-                        return result;
+                        return star2[j];
                     }
                 }
-                result = "Không tìm thấy chòm sao"
-                return result;
+
             }
 
-        } result = "Không tìm thấy chòm sao"
-        return result;
+        }
+        return "Không tìm thấy chòm sao"
+
 
     }
     let star = prompt("Nhập vào ngôi sao: ");
