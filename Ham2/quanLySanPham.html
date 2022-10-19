@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Add New Product: <input id="inputName" >
+<button onclick="add()">ADD</button>
+<h2>Dis play all product</h2>
+<table id="show" width="300">
+
+</table>
+</body>
+</html>
+
+<script>
+    let names = ["SamSung", "Apple","Nokia","Motorola"];
+    let divShow = document.getElementById("show");
+
+    function show() {
+        let str = "";
+        for (let i = 0; i < names.length; i++) {
+            str += "<tr>"
+            str += "<td><h2>" + names[i] + "</h2></td>"
+            str += "<td><button onclick='xoa(" + i + ")'>Delete</button></td>"
+            str += "<td><button onclick='edit(" + i + ")'>Edit</button></td>"
+            str += "</tr>"
+            console.log(str)
+        }
+
+        divShow.innerHTML = str;
+    }
+
+    show();
+
+    function add() {
+        let name = document.getElementById("inputName").value;
+        names.push(name);
+        show();
+    }
+
+    function xoa(k) {
+        names.splice(k, 1);
+        show();
+    }
+
+    function edit(index){
+        let n = prompt("nhap ");
+        names[index] = n;
+        show();
+    }
+</script>
+</body>
+</html>
