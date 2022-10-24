@@ -80,8 +80,8 @@
          this.height = height;
          this.color = color;
      }
-     rex(canvis){
-         let context = canvis.getContext('2d');
+     reder(canvas){
+         let context = canvas.getContext('2d');
          context.fillStyle=this.color;
          context.fillRect(this.x,this.y,this.width,this.height);
 
@@ -89,7 +89,7 @@
  }
 let canvas = document.getElementById('mycanvas');
 let hinh1 = new Rectangle(100,100,300,400,"red");
-hinh1.rex(canvas);
+hinh1.reder(canvas);
 </script>
 </body>
 </html>

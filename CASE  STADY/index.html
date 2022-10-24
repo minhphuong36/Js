@@ -92,6 +92,11 @@
                                     <a href="" class="category-item__link">Nokia</a>
                                 </li>
                             </ul>
+
+                            <div id="add">
+                                <button id="btn-add" onclick="addProductDisplay()">Thêm sản phẩm</button>
+                            </div>
+                            <div id="add-product" ></div>
                         </nav>
                     </div>
                     <div class="grid__column-10">
@@ -130,120 +135,20 @@
                             </div>
                         </div>
                         <div class="home-product">
-                            <div class="grid__row">
+                            <div class="grid__row " id="displayElement">
                                 <!--                                    product item-->
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                    <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                    <div class="home-product-item_price">
-                                        <span class="home-product-item_price-old">12.000.000đ</span>
-                                        <span class="home-product-item_price-current">10.000.000đ</span>
-                                    </div>
 
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
+<!--                                <div class="grid__column-2-4">-->
+<!--                                    <a class="home-product-item" href="#">-->
+<!--                                        <div class="home-product-item__img" style="background-image: url(./img/13pro.png)"></div>-->
+<!--                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>-->
+<!--                                        <div class="home-product-item_price">-->
+<!--                                            <span class="home-product-item_price-old">12.000.000đ</span>-->
+<!--                                            <span class="home-product-item_price-current">10.000.000đ</span>-->
+<!--                                        </div>-->
 
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="grid__column-2-4">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
-                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
-                                        <div class="home-product-item_price">
-                                            <span class="home-product-item_price-old">12.000.000đ</span>
-                                            <span class="home-product-item_price-current">10.000.000đ</span>
-                                        </div>
-
-                                    </a>
-                                </div>
-
-
+<!--                                    </a>-->
+<!--                                </div>-->
 
                             </div>
                         </div>
@@ -253,13 +158,11 @@
 
             </div>
 
-
-
-
         </div>
         <footer class="footer">
 
         </footer>
     </div>
 </body>
+<script src="main.js"></script>
 </html>

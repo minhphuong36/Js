@@ -6,7 +6,7 @@
       --border-color: #dbdbdb;
       --navbar-height: 34px;
       --header-height:120px;
-      --header-with-search-height: calc(var(--header-height)-var(--navbar-height));
+      --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 
 
 
@@ -52,7 +52,7 @@
   }
   .grid__column-10{
       padding-left: 5px;
-      padding-right: 5;
+      padding-right: 5px;
       width: 83.3334%;
 
   }
