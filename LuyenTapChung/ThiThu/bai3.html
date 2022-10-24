@@ -6,15 +6,26 @@
 </head>
 <body>
 <script>
-  let x = +prompt("Nhập số nguyên x");
-  let sum =0;
-  function sumOfListPrime(x){
-    for(let i=0; i <= x;i++){
-      sum += i;
+    var numbers = +prompt('In so cac so nguyen to dau tien');
+    var count = 0; //dem so cac so xem co bang numbers?
+    var n = 2;     // kiem tra gia tri nhan dc co phai snt?
+    for (let i = 2; i < 1000; i++){
+        if(count < numbers){
+            for(let j = 1; j <= i; j++){
+                if(i % j == 0){
+                    n += 1;
+                }
+            }
+            if(n == 2){
+                document.write(i + "<br>");
+                count +=1;
+            }
+            n = 0;
+        }else {
+            break;
+        }
+
     }
-    return sum;
-  }
-  alert("Tổng từ 0-X là:  "  +  sumOfListPrime(x));
 </script>
 </body>
 </html>
