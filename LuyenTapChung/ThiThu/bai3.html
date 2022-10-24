@@ -6,26 +6,24 @@
 </head>
 <body>
 <script>
-    var numbers = +prompt('In so cac so nguyen to dau tien');
-    var count = 0; //dem so cac so xem co bang numbers?
-    var n = 2;     // kiem tra gia tri nhan dc co phai snt?
-    for (let i = 2; i < 1000; i++){
-        if(count < numbers){
-            for(let j = 1; j <= i; j++){
-                if(i % j == 0){
-                    n += 1;
-                }
-            }
-            if(n == 2){
-                document.write(i + "<br>");
-                count +=1;
-            }
-            n = 0;
-        }else {
-            break;
-        }
-
-    }
+   function checkSNT(num){
+       for(let i=2; i <num;i++){
+           if(num%i===0){
+               return false;
+           }
+       }
+       return true;
+   }
+   let sum =0;
+   function sumOfListPrime(x){
+       for(let i=2; i <= x;i++){
+           if(checkSNT(i)){
+               sum += i;
+           }
+       }
+       return sum;
+   }
+   alert(sumOfListPrime(10))
 </script>
 </body>
 </html>

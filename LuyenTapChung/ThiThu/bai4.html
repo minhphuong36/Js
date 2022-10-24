@@ -7,38 +7,41 @@
 <body>
 <canvas id="mycanvas" width="1200px" height="1000px" style="border: 1px solid #d3d3d3;"></canvas>
 <script>
-  class Circle{
-    x;
-    y;
-    radius;
-
-      constructor(x, y, radius) {
-          this.x = x;
-          this.y = y;
-          this.radius = radius;
-      }
 
 
-      getX(){
-        return this.x;
-      }
-      setX(){
-        this.x = x;
-       }
-      getY(){
-        return this.y;
-      }
-       setY(){
-        this.y = y;
-      }
-      getRadius(){
-          return this.radius;
-      }
-      setRadius(){
-          this.radius = radius;
-      }
-
-  }
+<!--    Hình tròn-->
+  // class Circle{
+  //   x;
+  //   y;
+  //   radius;
+  //
+  //     constructor(x, y, radius) {
+  //         this.x = x;
+  //         this.y = y;
+  //         this.radius = radius;
+  //     }
+  //
+  //
+  //     getX(){
+  //       return this.x;
+  //     }
+  //     setX(){
+  //       this.x = x;
+  //      }
+  //     getY(){
+  //       return this.y;
+  //     }
+  //      setY(){
+  //       this.y = y;
+  //     }
+  //     getRadius(){
+  //         return this.radius;
+  //     }
+  //     setRadius(){
+  //         this.radius = radius;
+  //     }
+  //
+  // }
 // function createCircle(){
 //       var ctx = document.getElementById("mycanvas").getContext("2d");
 //       var circle = new Circle(500,500,200);
@@ -49,26 +52,44 @@
 // }
 // createCircle();
 
+// let myCircle = new Circle(500,500,200);
+//   let x = myCircle.getX();
+//   let y = myCircle.getY();
+//   let radius = myCircle.getRadius();
+//   let canvas = document.getElementById("mycanvas");
+//   let ctx = canvas.getContext("2d");
+//   ctx.fillStyle='#faf02a';
+//   ctx.fill();
+//   ctx.beginPath();
+//   ctx.arc(myCircle.x, myCircle.y, myCircle.radius, 0, 2*Math.PI);
+//   ctx.stroke();
 
 
-let myCircle = new Circle(500,500,200);
-  let x = myCircle.getX();
-  let y = myCircle.getY();
-  let radius = myCircle.getRadius();
-  // myCircle.setX(200);
-  // myCircle.setY(200);
-  // myCircle.setRadius(100);
-//   //
-  let canvas = document.getElementById("mycanvas");
-  let ctx = canvas.getContext("2d");
-  // ctx.fillStyle='#faf02a';
-  // ctx.fill();
-  ctx.beginPath();
-  ctx.arc(myCircle.x, myCircle.y, myCircle.radius, 0, 2*Math.PI);
-  ctx.stroke();
+// Hình chữ nhật
+ class Rectangle{
+    x;
+    y;
+    width;
+    height;
+    color;
 
+     constructor(x, y, width, height, color) {
+         this.x = x;
+         this.y = y;
+         this.width = width;
+         this.height = height;
+         this.color = color;
+     }
+     rex(canvis){
+         let context = canvis.getContext('2d');
+         context.fillStyle=this.color;
+         context.fillRect(this.x,this.y,this.width,this.height);
 
-
+     }
+ }
+let canvas = document.getElementById('mycanvas');
+let hinh1 = new Rectangle(100,100,300,400,"red");
+hinh1.rex(canvas);
 </script>
 </body>
 </html>
