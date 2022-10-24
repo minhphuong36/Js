@@ -6,6 +6,9 @@
 </head>
 <body>
 Add New Product: <input id="inputName" >
+        Img     : <input id="inputImg" >
+        Price   : <input id="inputPrice" >
+                    <input type="hidden" id="index">
 <button onclick="add()">ADD</button>
 <h2>Dis play all product</h2>
 <table id="show" width="300">
@@ -15,41 +18,149 @@ Add New Product: <input id="inputName" >
 </html>
 
 <script>
-    let names = ["SamSung", "Apple","Nokia","Motorola"];
+    function clear(){
+        document.getElementById("inputName").value = "";
+        document.getElementById("inputImg").value = "";
+        document.getElementById("inputPrice").value = "";
+        document.getElementById("index").value = "";
+    }
+    // let names = [["SamSung","https://cf.shopee.vn/file/7e07f670fe59ab60d9342f737202f026",1000] ,
+    //              ["Apple","https://img.websosanh.vn/v2/users/review/images/g0uimocg53p63.jpg?compress=85",2000]];
+    // let divShow = document.getElementById("show");
+    //
+    // function Run() {
+    //     let str = "";
+    //     for (let i = 0; i < names.length; i++) {
+    //         str += "<tr>"
+    //         str += "<td><h2>" + names[i][0] + "</h2></td>"
+    //         str += "<td><img width='75' height='75' src=" + names[i][1] + " ><td>"
+    //         str += "<td><h2>" + names[i][2] + "</h2></td>"
+    //         str += "<td><button onclick='xoa(" + i + ")'>Delete</button></td>"
+    //         str += "<td><button onclick='edit(" + i + ")'>Edit</button></td>"
+    //         str += "</tr>"
+    //         // console.log(str)
+    //     }
+    //
+    //     divShow.innerHTML = str;
+    // }
+    //
+    // Run();
+    //
+    // function add() {
+    //     let name = document.getElementById("inputName").value;
+    //     let img = document.getElementById("inputImg").value;
+    //     let price = document.getElementById("inputPrice").value;
+    //     names.push([name,img,price]);
+    //     Run();
+    // }
+    //
+    // function xoa(p) {
+    //     names.splice(p, 1);
+    //     Run();
+    // }
+    //
+    // function edit(index){
+    //     let n = prompt("nhap ");
+    //     let k = prompt("nhap ");
+    //     let l = prompt("nhap ");
+    //     names.splice(index,1,[n,k,l]);
+    //     Run();
+    // }
+
+
+    class Product{
+        name;
+        img;
+        price;
+
+        constructor(name, img, price) {
+            this.name = name;
+            this.img = img;
+            this.price = price;
+        }
+        getName(){
+            return this.name;
+        }
+        getImg(){
+            return this.img;
+        }
+        getPrice(){
+            return this.price;
+        }
+        setName(name){
+            this.name = name;
+        }
+        setImg(img){
+            this.img = img;
+        }
+        setPrice(price){
+            this.price = price;
+        }
+
+    }
+
+    let product = new Product();
+    product.setName("SamSung");
+    product.setImg("https://cf.shopee.vn/file/7e07f670fe59ab60d9342f737202f026");
+    product.setPrice(1234);
+    let products = [];
+    products.push(product)
     let divShow = document.getElementById("show");
 
-    function show() {
+    function Run() {
         let str = "";
-        for (let i = 0; i < names.length; i++) {
-            str += "<tr>"
-            str += "<td><h2>" + names[i] + "</h2></td>"
-            str += "<td><button onclick='xoa(" + i + ")'>Delete</button></td>"
-            str += "<td><button onclick='edit(" + i + ")'>Edit</button></td>"
-            str += "</tr>"
-            console.log(str)
+           for(let i= 0; i < products.length ;i++){
+               let product = products[i];
+               str += "<tr>"
+               str += "<td><h2>" + product.name + "</h2></td>"
+               str += "<td><img width='75' height='75' src=" + product.img + " ><td>"
+               str += "<td><h2>" + product.price + "</h2></td>"
+               str += "<td><button onclick='xoa(" + i + ")'>Delete</button></td>"
+               str += "<td><button onclick='edit(" + i + ")'>Edit</button></td>"
+               str += "</tr>"
+
         }
 
         divShow.innerHTML = str;
     }
 
-    show();
+    Run();
 
     function add() {
         let name = document.getElementById("inputName").value;
-        names.push(name);
-        show();
+        let img = document.getElementById("inputImg").value;
+        let price = document.getElementById("inputPrice").value;
+        let index = document.getElementById("index").value;
+        let product = new Product(name,img,price);
+        if(index != ""){
+            products.splice(index,1,product);
+        }else{
+            products.push(product);
+        }
+        Run();
+        clear();
     }
 
-    function xoa(k) {
-        names.splice(k, 1);
-        show();
+    function xoa(p) {
+        products.splice(p, 1);
+        Run();
     }
 
     function edit(index){
-        let n = prompt("nhap ");
-        names[index] = n;
-        show();
+        // let n = prompt("nhap name");
+        // let i = prompt("nhap img");
+        // let p = prompt("nhap price");
+        // let product = new Product(n,i,p);
+        // products.splice(index,1,product);
+        // Run();
+        let product = products[index];
+        document.getElementById("inputName").value = product.name;
+        document.getElementById("inputImg").value = product.img;
+        document.getElementById("inputPrice").value = product.price;
+        document.getElementById("index").value = index;
+
     }
+
 </script>
 </body>
 </html>

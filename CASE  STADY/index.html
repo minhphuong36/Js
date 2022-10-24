@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">">
+
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar--item header__navbar--item-separate">Vào cửa hàng</li>
+                        <li class="header__navbar--item">
+                           <span class="header__navbar-nopointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar--item">
+                            <a href="" class="header__navbar--item--link">
+                                <i class="fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                        </li>
+                        <li class="header__navbar--item">
+                            <a href="" class="header__navbar--item--link">
+                                <i class="fa-solid fa-question"></i>
+                                Trợ giúp
+                            </a>
+
+                        </li>
+                        <li class="header__navbar--item header__navbar--item-strong">Đăng ký</li>
+                        <li class="header__navbar--item header__navbar--item-strong">Đăng nhập</li>
+                    </ul>
+
+                </nav>
+
+<!--                Header with search-->
+                <div class="header-with-search">
+                    <div class="header_logo">
+                        <img class="header_logo-img" src="assets/css/d62k4ku-33db00f5-0148-49dd-966a-d5c69f5cdceb.png">
+
+                    </div>
+                    <div class="header_search">
+                        <input type="text" class="header_search-input" placeholder="Tìm kiếm">
+                        <div class="header_search-selection">
+                            <span class="header_search-selection-label">Trong Shop</span>
+                            <i class="header_search-selection-label-icon fa-sharp fa-solid fa-caret-down"></i>
+                        </div>
+                        <button class="header_search-btn">
+                            <i class="header_search-btn-icon fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="header_cart">
+                        <i class="header_cart-icon fa-solid fa-cart-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content ">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class=" category__heading-icon fa-solid fa-list"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">IPhone</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">SamSung</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Nokia</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter_btn btn">Phổ biến</button>
+                            <button class="home-filter_btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter_btn btn">Bán chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                               <i class="select-input_icon fa-sharp fa-solid fa-caret-down"></i>
+<!--                                list option-->
+                                <ul class="select-input_list">
+                                    <li class="select-input_item">
+                                        <a href="" class="select-input_link">Giá: Thấp đến cao</a>
+                                    <li class="select-input_item">
+                                        <a href="" class="select-input_link">Giá: Cao đến thấp</a>
+                                    </li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn-disabled">
+                                        <i class="home-filter__page-icon fa-sharp fa-solid fa-caret-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fa-sharp fa-solid fa-caret-right"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!--                                    product item-->
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                    <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                    <div class="home-product-item_price">
+                                        <span class="home-product-item_price-old">12.000.000đ</span>
+                                        <span class="home-product-item_price-current">10.000.000đ</span>
+                                    </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://24hstore.vn/images/products/2020/04/19/large/iphone-xs-max-grey_1587267483_1.jpg)"></div>
+                                        <h4 class="home-product-item_name">Điện thoại iPhone Xs Max 64GB</h4>
+                                        <div class="home-product-item_price">
+                                            <span class="home-product-item_price-old">12.000.000đ</span>
+                                            <span class="home-product-item_price-current">10.000.000đ</span>
+                                        </div>
+
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>

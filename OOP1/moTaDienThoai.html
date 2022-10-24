@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        text;
+        messageIn;
+        edit(text){
+            this.text = text;
+        }
+        send(mobile){
+            mobile.receive(this.text);
+        }
+        receive(text){
+            this.messageIn = text;
+
+        }
+        getMessageIn(){
+            return this.messageIn;
+        }
+
+
+    }
+    let nokia = new Mobile();
+    let iphone = new Mobile();
+
+    nokia.edit("asdasdas");
+    nokia.send(iphone);
+    console.log(iphone.getMessageIn());
+</script>
+
+</body>
+</html>

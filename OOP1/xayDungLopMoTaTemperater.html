@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class Temperater {
+    nhietdo;
+    constructor (nhietdo){
+        this.nhietdo = nhietdo;
+    }
+    getNhietdo(){
+        return this.nhietdo;
+    }
+    setNhietdo(nhietdo){
+        this.nhietdo = nhietdo;
+    }
+    getcenciusToF(){
+        return this.nhietdo *1.8 + 32;
+    }
+    getcenciustoK(){
+        return this.nhietdo + 273.15;
+    }
+
+}
+let myTemperater = new Temperater(30);
+let nhietdo = myTemperater.getNhietdo()
+
+myTemperater.setNhietdo(25);
+
+document.write("Nhiet do F = " + myTemperater.getcenciusToF()+ "<br>");
+document.write("Nhiet do K = " + myTemperater.getcenciustoK()+ "<br>");
+</script>
+</body>
+</html>

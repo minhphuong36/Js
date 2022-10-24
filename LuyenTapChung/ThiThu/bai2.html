@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [12,3,-9,56,9,30];
+    let arrNew =[];
+    let index = +prompt("Nhập vị trí index");
+    let x = +prompt("Nhập số nguyên x")
+    function insertNumberToArry(arr){
+        for(let i=0; i<arr.length;i++){
+            if(arr[index] <0 || arr[index]> arr.length){
+                return arr;
+            }else {
+                arr.splice(index,0,x);
+                arrNew = arr;
+                return arrNew;
+
+            }
+
+        }
+    }
+    document.write(insertNumberToArry(arr));
+</script>
+</body>
+</html>

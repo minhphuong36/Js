@@ -17,7 +17,9 @@ Name <input id="inputName">
   function show(){
     let index ="";
     for(let i =0; i < names.length; i++){
-       index += names[i] + "<button onClick=\"delete()\">Delete</button>" + "<br>"
+       index += names[i] +  "<button onClick=\"delete( " + i + " )\">Delete</button>" +
+           "<button onClick=\"edit(" + i + ")\">Edit</button>"  + "<br>"
+
 
 
     }
@@ -33,7 +35,6 @@ Name <input id="inputName">
    function delete(x){
       names.splice(x,1);
       show();
-
   }
 </script>
 

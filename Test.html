@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = +prompt("Enter a number:");
+    let number = [-3, 5, 1, 3, 5, 10];
+    let count=0
+    for (let i = 0; i < number.length; i++) {
+        if (value == number[i]) {
+
+            alert("value " + number[i] + "tìm thấy ở vị trí " + i)
+            count++
+        } else if(i==number.length-1 && count==0){
+            alert("Không tìm thấy")
+        }
+    }
+</script>
+</body>
+</html>

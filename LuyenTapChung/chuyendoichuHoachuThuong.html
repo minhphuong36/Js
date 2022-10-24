@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập ký tự" id="chuoi">
+<br>
+<br>
+<button onclick="change()">Change</button>
+<br>
+<br>
+<div id="show"></div>
+<script>
+
+    function change() {
+        document.getElementById("show").innerHTML=""
+        let x="";
+        let a= document.getElementById("chuoi").value;
+        let mang=a.split("")
+        if (a!="") {
+            for (let i = 0; i < mang.length; i++) {
+                if (mang[i].toUpperCase() === mang[i]) {
+                    mang[i] = mang[i].toLowerCase()
+                    x += mang[i]
+                    document.getElementById("chuoi").value = ""
+                } else {
+                    mang[i] = mang[i].toUpperCase()
+                    x += mang[i]
+                    document.getElementById("chuoi").value = ""
+
+                }
+            }
+            document.getElementById("show").innerHTML += x
+        }
+    }
+</script>
+</body>
+</html>
