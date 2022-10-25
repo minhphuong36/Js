@@ -38,7 +38,7 @@ class Product{
 }
 var product1 = new Product("Điện thoại Iphone XS max 64GB","./img/iphone-xs-max.jpg","10.000.000","14.000.000");
 var product2 = new Product("Điện thoại Iphone 11 pro max 64GB","./img/iphone11pro.jpg","12.000.000","15.000.000");
-var product3 = new Product("Điện thoại Iphone 12 pro max 64GB","./img/iphone12pro.png","16.000.000","14.000.000");
+var product3 = new Product("Điện thoại Iphone 12 pro max 64GB","./img/iphone12pro.png","14.000.000","16.000.000");
 var product4 = new Product("Điện thoại Iphone 13 pro max 64GB","./img/13pro.jpeg","20.000.000","22.000.000");
 var product5 = new Product("Điện thoại Iphone 14 pro max 64GB","./img/iPhone14pro.jpg","37.000.000","40.000.000");
 var product6 = new Product("Apple Watch series 3","./img/appleseries3.jpg","3000.000","3500.000");

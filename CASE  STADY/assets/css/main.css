@@ -47,7 +47,7 @@ color: rgba(255,255,255,0.7);
 .header__navbar--item-strong{
     font-weight: 1000 ;
 }
-.header__navbar-nopointer{
+.header__navbar-no-pointer{
     cursor: text;
     color: var(--white-color);
 }
@@ -74,9 +74,7 @@ color: rgba(255,255,255,0.7);
     background-color: var(--white-color);
     display: flex;
     align-items: center;
-
-
-
+    margin: 0 0 10px 0;
 
 }
 .header_cart{
@@ -350,6 +348,7 @@ color: rgba(255,255,255,0.7);
     padding-left: 0;
     list-style: none;
     margin-left: 12px;
+
 }
 /*#btn-addProduct, #btn-cancel{*/
 /*    margin: 5px 5px 5px 5px;*/
@@ -363,7 +362,7 @@ color: rgba(255,255,255,0.7);
 }
 #input-name, #input-priceCurrent, #input-priceOld, #input-img{
     padding: 8px 15px;
-    margin:2px 0px 2px 0px;
+    margin:2px 0 2px 0;
     border-radius: 5px;
     outline: none;
     border: 1px solid #e09ea6;
@@ -381,21 +380,22 @@ color: rgba(255,255,255,0.7);
 
 .information{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding-top: 20px;
 }
 
 .title-information{
-    font-size: 25px;
-    color: ;
+    font-size: 3rem;
+    color: red ;
     padding-bottom: 30px;
-    text-decoration: ;
+    /*text-decoration: none;*/
 }
 .information{
-    padding-left: 160px;
+    /*padding-left: 100px;*/
+    margin: 20px 100px 20px 100px;
 }
 .dichvu ul li{
-    font-size: 18px;
+    font-size: 2rem;
     list-style: none;
     padding-bottom: 20px;
 }
@@ -409,6 +409,6 @@ color: rgba(255,255,255,0.7);
 
 .lienhe ul li{
     list-style: none;
-    font-size: 18px;
+    font-size: 2rem;
     padding-bottom: 20px;
 }
