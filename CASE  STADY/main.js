@@ -41,9 +41,15 @@ var product2 = new Product("Điện thoại Iphone 11 pro max 64GB","./img/iphon
 var product3 = new Product("Điện thoại Iphone 12 pro max 64GB","./img/iphone12pro.png","16.000.000","14.000.000");
 var product4 = new Product("Điện thoại Iphone 13 pro max 64GB","./img/13pro.jpeg","20.000.000","22.000.000");
 var product5 = new Product("Điện thoại Iphone 14 pro max 64GB","./img/iPhone14pro.jpg","37.000.000","40.000.000");
+var product6 = new Product("Apple Watch series 3","./img/appleseries3.jpg","3000.000","3500.000");
+var product7 = new Product("Apple Watch series 4","./img/watchseries4.jpg","3700.000","3900.000");
+var product8 = new Product("Apple Watch series 5","./img/watchseri5.jpg","4000.000","4200.000");
+var product9 = new Product("Apple Watch series 6","./img/Series6.jpg","4300.000","5000.000");
+var product10 = new Product("Apple Watch series 7","./img/Seri7.jpg","8000.000","9500.000");
 
 
-arrProductAll = [product1,product2,product3,product4,product5];
+
+arrProductAll = [product1,product2,product3,product4,product5,product6,product7,product8,product9,product10];
 display(arrProductAll);
 function display(arrProduct){
      let data = "";
@@ -105,7 +111,7 @@ function addProductDisplay() {
                     <input type="text" placeholder="Tên sản phẩm" id="input-name" ><br>
                     <input type="text" placeholder="Giá" id="input-priceCurrent" ><br>
                     <input type="text" placeholder="Giá cũ" id="input-priceOld" ><br>
-                    <input type="text" placeholder="Img" id="input-img" ><br>
+                    <input type="text" placeholder="Link-Img" id="input-img" ><br>
                     <p id="check" style="color: red; padding: 15px 0px 0px 25px"></p>
                     <input type="submit" value="Thêm" onclick="addProduct()" id="btn-addProduct">
                      <input type="submit" value="Hủy" onclick="cancelAdd()" id="btn-cancel">
@@ -127,7 +133,7 @@ function addProduct() {
     } else if (isNaN(priceCurrentProduct) || isNaN(priceOldProduct)) {
         check.innerHTML = "* Giá sản phẩm phải là số"
     } else {
-        var product = new Product(nameProduct, imgProduct, priceOldProduct, priceCurrentProduct );
+        var product = new Product(nameProduct, imgProduct, priceCurrentProduct, priceOldProduct );
 
         arrProductAll.push(product);
         display(arrProductAll);

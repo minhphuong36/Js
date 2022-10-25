@@ -60,6 +60,7 @@ color: rgba(255,255,255,0.7);
 }
 .header_logo{
     width: 200px;
+    padding-bottom: 20px;
 }
 .header_logo-img{
     width: 100px;
@@ -73,6 +74,9 @@ color: rgba(255,255,255,0.7);
     background-color: var(--white-color);
     display: flex;
     align-items: center;
+
+
+
 
 }
 .header_cart{
@@ -90,6 +94,7 @@ color: rgba(255,255,255,0.7);
     padding: 0 16px;
     border: none;
     outline: none;
+
 }
 .header_search-selection{
     border-left: 1px solid #ccc;
@@ -329,14 +334,81 @@ color: rgba(255,255,255,0.7);
 }
 
 #btn-add, #btn-addProduct, #btn-cancel{
-    background-color:#ecb3ba;
+    background-color:#e97f02;
     border: none;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    margin: 5px;
     color: white;
+    font-size: 1.4rem;
 }
 #btn-add:hover, #btn-addProduct:hover, #btn-cancel:hover{
-    background: #131212;
-    color: #e09ea6;
+    background: #9cb8dd;
+    color: black;
+}
+#btn-add{
+    padding-left: 0;
+    list-style: none;
+    margin-left: 12px;
+}
+/*#btn-addProduct, #btn-cancel{*/
+/*    margin: 5px 5px 5px 5px;*/
+/*}*/
+
+
+#add-product{
+    padding-left: 0;
+    list-style: none;
+    margin-left: 12px;
+}
+#input-name, #input-priceCurrent, #input-priceOld, #input-img{
+    padding: 8px 15px;
+    margin:2px 0px 2px 0px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #e09ea6;
+    font-size: 1.2rem;
+}
+
+.logo-brand{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 110px;
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: #0063c4;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+}
+
+.title-information{
+    font-size: 25px;
+    color: ;
+    padding-bottom: 30px;
+    text-decoration: ;
+}
+.information{
+    padding-left: 160px;
+}
+.dichvu ul li{
+    font-size: 18px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+.dichvu ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.dichvu ul li a:hover{
+    color: #ecb3ba;
+}
+
+.lienhe ul li{
+    list-style: none;
+    font-size: 18px;
+    padding-bottom: 20px;
 }
