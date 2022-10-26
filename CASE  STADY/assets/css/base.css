@@ -102,7 +102,6 @@
 .select-input_icon{
       font-size: 1.4rem;
       color: var(--text-color);
-
   }
 .select-input:hover .select-input_list{
     display: block;
@@ -142,6 +141,7 @@
       left: 0;
       display: flex;
       animation: fadeIn linear 0.1s;
+      z-index: 1;
   }
   .modal__overlay{
       position: absolute;
