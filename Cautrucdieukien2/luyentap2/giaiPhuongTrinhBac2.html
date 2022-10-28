@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--  ph dang ax2 + bx + c = 0-->
+let a = +prompt("nhap số a");
+let b = +prompt("nhap số b");
+let c = +prompt("nhap số c");
+let delta = b*b -4*a*c;
+
+
+if(a == 0 ){
+  if(b==0){
+    if(c==0){
+      alert("phuong trinh vô số nghiệm");
+    }else {
+      alert("phuong trình vô nghiệm");
+    }
+  }else {
+    alert("Phương trình có nghiệm x = "+ (-c/b));
+  }
+}else {
+  if(delta < 0){
+    alert("phương trình vo nghiệm");
+  }else if(delta == 0){
+    alert("phương trình có nghiệm kép x = " + (-b/(2*a)));
+  }else if(delta > 0){
+    alert("phương trình có 2 nghiệm x1 ="+ (-b + Math.sqrt(delta))/(2*a) + " x2 = " + (-b - Math.sqrt(delta))/(2*a) );
+  }
+}
+
+
+</script>
+</body>
+</html>

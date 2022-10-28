@@ -374,7 +374,7 @@ function login(){
         }
     }
     if(check){
-        document.getElementById("register-main").style.display = "none";
+        // document.getElementById("register-main").style.display = "none";
         document.getElementById("longin-main").style.display = "none";
         document.getElementById("longin-add").innerHTML = email;
     }else{
