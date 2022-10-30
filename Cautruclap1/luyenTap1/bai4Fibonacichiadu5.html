@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tong20sodau</title>
+    <title>Sochiahetcho5</title>
 </head>
 <body>
 <script>
@@ -11,18 +11,18 @@
   let number1 = 0;
   let number2 = 1;
   let number;
-  let tong = 0;
   for(let i = 0; i < a; i++){
-    document.write(number1 + "<br>");
-    tong += number1;
+    // document.write(number1 + "<br>");
     number = number1 + number2;
     number1 = number2;
     number2 = number;
+    if ( number1 % 5 === 0 && number1 !== 0){
+      alert(number1 + " la so chia het cho 5 dau tien");
+        break;
+    }
+
 
   }
-  document.write(tong);
-
-
 
 </script>
 </body>

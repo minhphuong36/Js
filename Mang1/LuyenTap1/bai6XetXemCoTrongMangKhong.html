@@ -8,22 +8,24 @@
 <script>
     let a = [12,5,90,67,65,8,45,2,77,10];
     let b = +prompt('Nhập số nguyên bất kỳ:');
-    let x= false;
+    let x= true;
 
     for(let i = 0; i < a.length; i++){
 
-        if(a[i] == b){
-            x =true;
-        }if(a[i] != b){
+        if(b==a[i]){
+           x = true;
+           break;
+        }else {
             x = false;
-
         }
     }
+
     if(x){
         alert("có trong mang");
     }else {
         alert("không có trong mảng");
     }
+
 
 </script>
 </body>

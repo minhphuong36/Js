@@ -5,6 +5,10 @@
     <title>Title</title>
 </head>
 <body>
+<!--<h1>Từ Điển</h1>-->
+<!--Nhập từ cần tìm kiếm <input type="text" id="word" >-->
+<!--<button   onclick="search()" >Search</button> <br>-->
+<!--<div id="show"></div>-->
 <script>
     // let value = +prompt("Enter a number:");
     // let number = [-3, 5, 1, 3, 5, 10];
@@ -22,18 +26,65 @@
 
 // tính tổng các phần tử của ma trận;
 //     let arr = [[1,32,4,45,-3,5],[66,5,-9,5,4,22],[45,90,1,33,43,5],[-6,77,23,89,-1,-2]];
-    let arr1 = [[1,1,1,1,1,1],[1,1,1,1,1,1]];
-    let sum = 0;
-    let sum1 = 0;
+//     let arr1 = [[1,1,1,1,1,1],[1,1,1,1,1,1]];
+//     let sum = 0;
+//     let sum1 = 0;
+//
+//
+//     for(let i = 0; i < arr1.length;i++){
+//         for (let j =0;j < arr1[i].length;j++){
+//             sum1 += arr1[0][j];
+//         }
+//         sum = sum1;
+//     }
+//     document.write(sum);
 
 
-    for(let i = 0; i < arr1.length;i++){
-        for (let j =0;j < arr1[i].length;j++){
-            sum1 += arr1[0][j];
-        }
-        sum = sum1;
-    }
-    document.write(sum);
+
+    // let value=0;
+    // let setting = true;
+    // let title="Hello";
+    // if (value || (setting && title == "Hello"))
+    //     console.log(1)
+    // if (value == 1 && title == "Hello")
+    //     console.log(2)
+
+    // let str = "1234";
+    // let tong = 0;
+    // let arr = [0,1,2,3,4,5,6,7,8,9];
+    // for(let i = 0; i < str.length; i++){
+    //     tong += arr.indexOf(str[i]);
+    // }
+    // alert(tong);
+
+
+
+
+    let tienganh = ["cat", "dog", "dragon", "ball", "pink", "banana"];
+    let tiengviet = ["mèo", "chó", "rồng", "bóng", "hồng", "chuối"];
+    let ketqua;
+    let index;
+
+            function search(){
+                let x = document.getElementById("word").value;
+                for(let i=0; i< tienganh.length;i++){
+                    if( x == tienganh[i]){
+                        index = i;
+                        for(let j =0; j < tiengviet.length;j++){
+                            if(index==j){
+                                ketqua = tiengviet[j];
+
+                            }
+                        }
+                    }
+                }
+
+                document.getElementById("show").innerHTML=ketqua;
+            }
+
+
+
+
 
 </script>
 </body>

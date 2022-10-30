@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [12,5,90,67,65,8,45,2,77,10];
+  let v = +prompt("nhap v");
+  let check = true;
+  let b = [];
+  let index;
+  for(let i =0; i < a.length; i++){
+      if(a[i] != v){
+         check = true;
+      } else if(a[i] == v){
+          index = i;
+          check = false;
+      }
+  }
+  if(check){
+      document.write(a);
+  }else{
+      // for(let j =0; j< a.length;j++){
+      //     if(index < j){
+      //         b[j-1]=a[j-1]
+      //     } else if(index > j){
+      //         b[j+1]=a[j+1];
+      //     }
+      //
+      // }
+      b=a;
+      b.push(0);
+      document.write(b);
+
+  }
+
+
+
+
+
+</script>
+</body>
+</html>

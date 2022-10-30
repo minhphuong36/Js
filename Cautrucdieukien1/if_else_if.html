@@ -6,23 +6,22 @@
 </head>
 <body>
 <script>
-  var userName = prompt("Nhập tên đăng nhập:");
+  let userName = prompt("Nhập tên đăng nhập:");
   if(userName =="admin"){
-    alert("welcome");
-   }else if (userName == "null"){
-    alert("canceld");
-   }else{
-    alert("i do not know you");
+      let pass = prompt("Nhập password");
+      if( pass == "raisingthebar"){
+          alert("welcome");
+      }else if( pass == "null") {
+          alert("Canceled");
+      }else {
+          alert("Wrong password");
+      }
+  }else if(userName == "null"){
+      alert("Canceled");
+  }else {
+      alert("I do not know you");
   }
 
-  var pass = prompt("Nhập password");
-  if( pass == "raisingthebar"){
-    alert("Codegym Welcome");
-  }else if(pass == "null"){
-    alert("Canceld");
-  }else {
-    alert("Wrong password");
-  }
   </script>
 </body>
 </html>

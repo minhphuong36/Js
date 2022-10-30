@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-  let a = [ 40,21,35,26, 1,4,6,2,12,30];
+  let a = [ 40,21,35,46, 1,4,46,2,12,30];
   let min = a[0];
   for( let i = 0;i < a.length; i++){
     if(a[i] <= min){
@@ -14,17 +14,15 @@
     }
   }
   let max = min;
-  let tong = 0;
-  let trungbinhcong = 0;
+  let vitri;
   for(let i = 0;i < a.length; i++){
-    tong += a[i];
     if( a[i] > max){
       max = a[i];
+      vitri = i;
+        alert("max = " + max + "  vị trí: " + vitri);
     }
-
   }
-  trungbinhcong = tong/(a.length);
-  alert("max = " + max + "  Trung bình cộng: " + trungbinhcong);
+
 </script>
 </body>
 </html>
